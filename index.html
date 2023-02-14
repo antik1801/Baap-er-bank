@@ -1,56 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Function baap er bank functional</title>
+    <title>Baap er bank</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+
 <body>
     <header>
-        <section>
-            <h1 class="text-5xl text-center mt-5">Functional <span class="text-red-700 font-medium">Baap er Hotel</span> !!!</h1>
-        </section>
+        <h1 class="text-5xl text-center mt-8">Welcome to <span class="font-semibold text-violet-600">baap er hotel</span>
+        </h1>
     </header>
-    <main class="my-7">
-        <div class="grid grid-cols-3 gap-5 w-3/4 mx-auto mt-6">
-            <div class="bg-gray-800 p-4 font-medium text-amber-500 rounded-lg">
-                <h4 class="text-3xl">Deposit</h4>
-                <h2 class="text-6xl">$<span id="deposit-text">00</span></h2>
-            </div>
-            <div class="bg-gray-800 p-4 font-medium text-amber-500 rounded-lg">
-                <h4 class="text-3xl">Withdraw</h4>
-                <h2 class="text-6xl">$<span id="withdraw-text">00</span></h2>
-            </div>
-            <div class="bg-gray-800 p-4 font-medium text-amber-500 rounded-lg">
-                <h4 class="text-3xl">Balance</h4>
-                <h2 class="text-6xl">$<span id="Balance-total-text">1240</span></h2>
-            </div>
-            
-        </div>
-        <section class="mt-8 w-3/4 mx-auto">
-            <!-- Deposit and withdraw section  -->
-            <div class="grid grid-cols-2 gap-5">
-                <div class="bg-gradient-to-r from-slate-900 to-stone-500 text-amber-500 p-8 block rounded-xl">
-                   <h3 class="text-3xl mb-4 font-semibold">Your Deposit</h3>
-                   <input id="deposit-field" type="text" class="w-3/4 px-4 py-2 rounded-xl font-semibold block text-black" placeholder="$Amount you want to deposit">
-                   <button id="btn-diposit" class="bg-yellow-200 mt-4 px-4 py-2 text-black text-2xl rounded-xl hover:bg-gray-200 ">Deposit</button>
-                </div> 
-                <div class="bg-gradient-to-r from-slate-900 to-stone-500 text-amber-500 p-8 block rounded-xl">
-                   <h3 class="text-3xl mb-4 font-semibold">Your Withdraw</h3>
-                   <input id="withdraw-field" type="text" class="w-3/4 px-4 py-2 rounded-xl font-semibold block text-black" placeholder="$Amount you want to withdraw">
-                   <button id="btn-withdraw" class="bg-yellow-200 mt-4 px-4 py-2 text-black text-2xl rounded-xl hover:bg-gray-200 ">Withdraw</button>
-                </div>  
+    <main>
+        <section class="bg-blue-200 w-9/12 mx-auto mt-12 p-10">
+            <h3 class="text-4xl font-semibold">Please Login</h3>
+            <div class="mt-4">
+                <input class="w-10/12 block mb-4 px-3 py-2 rounded-lg" type="text" id="mail" placeholder="Your Email Address" required>
+                <input class="w-10/12 block mb-4 px-3 py-2 rounded-lg" type="password" name="" id="password" placeholder="Your Password" required>
+                <button class="bg-amber-400 px-8 py-2 text-white rounded-lg hover:bg-amber-600 transition duration-150 ease-in-out" id="btn-submit">Submit</button>
+                <input class="text-right" type="checkbox" onclick="myFunction()">Show Password
             </div>
         </section>
     </main>
     <footer>
+
     </footer>
-    <!-- JS connection  -->
-    <!-- <script src="./Js/utilities.js"></script> -->
-    <!-- <script src="./Js/deposit.js"></script> -->
-    <script src="./Js/depositFunction.js"></script>
-    <!-- <script src="./Js/withdraw.js"></script> -->
+
+    <!-- Login JS  -->
+    <script src="./Js/index.js"></script>
 </body>
+
 </html>
